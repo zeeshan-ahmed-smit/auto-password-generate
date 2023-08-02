@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="content">
+                <h1 id='heading'>Generate a secure password:</h1>
+                <hr>
+                <div  class="copy-text">
+                    <div>
+                        <p id="copyText">Copy</p>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <input id="passRead" readonly placeholder="<PASSWORD>">
+                </div>
+                <div class="length-input">
+                    <h2>Password Length</h2>
+                    <input id="passInput" type="number"value="10" min="4" max="15">
+                </div>
+                <div class="sitting-detail">
+                    <h1>Password Sittings</h1>
+                    <div class="options">
+                        <div class="option">
+                            <label>
+                                <span>Uppercase Letters:</span>
+                                <input type="checkbox" id="upperCase">
+                            </label>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <span>Lowercase Letters:</span>
+                                <input type="checkbox" id="lowercase" checked="true">
+                            </label>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <span>Numbers:</span>
+                                <input type="checkbox" id="numbers">
+                            </label>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <span>Special Characters:</span>
+                                <input type="checkbox" id="specialChar">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="passGenBtn">Generate Password</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

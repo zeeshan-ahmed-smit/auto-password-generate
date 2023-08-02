@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #f2f3fa;
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 450px;
+    height: auto;
+    transition: all .3s ease-in-out;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0.5em;
+    padding: 30px 30px 10px 30px;
+    transform: scale(.9);
+    display: flex;
+    justify-self: center;
+}
+
+.content {
+    width: 100%;
+}
+
+.content h1 {
+    margin-top: -16px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.copy-text {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.copy-text div {
+    width: 60px;
+    height: 30px;
+    margin-bottom: -20px;
+    border-radius: 0.5em;
+    margin-top: 15px;
+    margin-left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.copy-text div:hover {
+    background: rgb(223, 223, 221);
+
+}
+
+.copy-text p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inputBox #passRead {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 0.5em;
+    outline: none;
+    font-size: 1.5em;
+    border: 1px solid #000;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+
+.length-input {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.length-input .detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.length-input :where(h2, p) {
+    font-size: 25px;
+    color: rgb(96, 96, 96);
+    margin-top: 0px !important;
+}
+
+.length-input input {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    outline: none;
+    font-size: 1.4em;
+    margin-top: 10px;
+    background: transparent;
+    border-radius: 0.5em;
+    border: 1px solid #000;
+}
+
+.sitting-detail {
+    margin-top: 30px;
+}
+
+.sitting-detail h1 {
+    font-size: 25px;
+    color: rgb(96, 96, 96);
+    text-align: start !important;
+    margin-bottom: 30px;
+}
+
+.options .option span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.options .option {
+    margin-top: 20px;
+}
+
+.options .option label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options .option input {
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 5px !important;
+    background: transparent;
+}
+
+.btn {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn button {
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 900px;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    text-transform: uppercase;
+    border-radius: 0.5em;
+    border: none;
+    background: gainsboro;
+}
+
+.btn button:hover {
+    background: rgb(193, 192, 192);
+}
+
+.btn button:active {
+    transform: translateY(4px) translateX(5px);
+}
+
+@media only screen and (max-width:500px) {
+    .container {
+        width: 100%;
+    }
+
+    .btn button {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .content h1 {
+        font-size: 1.5em;
+    }
+
+    .copy-text div p {
+        font-size: 1em;
+    }
+
+    .inputBox #passRead {
+        font-size: 1.3em;
+    }
+
+    .length-input input {
+        font-size: 1.3em;
+    }
+
+    .options .option span {
+        font-size: 1.4em;
+    }
+
+    .options .option input {
+        width: 20px;
+        height: 15px;
+        margin-top: 8px!important;
+    }
+
+    .btn button {
+        font-size: 18px;
+    }
+}
